@@ -10,7 +10,8 @@ import UIKit
 
 
 class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-        
+    
+    var selection = String()
     
     @IBOutlet weak var thePlaylist: UILabel!
     
@@ -51,11 +52,102 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         
         if (global.moodVar == "Romantic") {moodInt = 10}
         
-       //angry+punk combine
-        if (moodInt * genreInt == 56) {
-           thePlaylist.text = "You should listen to Rage Against The Machine."
+       //angry x punk combine
+        if (moodInt * genreInt == 40) {
+           thePlaylist.text = "You should listen to Rage Against The Machine's album Renegades."
+        }
+        else if (moodInt * genreInt == 24) {
+            thePlaylist.text = "You should listen to Lana Del Rey."
+        }
+            
+        else if (moodInt * genreInt == 56) {
+            thePlaylist.text = "You should listen to James Taylor."
+        }
+        else if (moodInt * genreInt == 72) {
+            thePlaylist.text = "You should listen to Blink 182."
         }
         
+        else if (moodInt * genreInt == 56) {
+            thePlaylist.text = "You should listen to Josh Turner."
+        }
+        
+        //happy x pop
+        if (moodInt * genreInt == 18 ) {
+            thePlaylist.text = "You should listen to Ariana Grande's album Sweetner."
+        }
+            
+        else if (moodInt * genreInt == 30) {
+                thePlaylist.text = "You should listen to The Maine."
+            }
+        else if (moodInt * genreInt == 42) {
+            thePlaylist.text = "You should listen to Ella Fitzgerald."
+        }
+        else if (moodInt * genreInt == 54) {
+            thePlaylist.text = "You should listen to Homeshake."
+        }
+        
+        else if (moodInt * genreInt == 42) {
+            thePlaylist.text = "You should listen to Kacey Musgraves."
+        }
+        
+        //sad x blues
+        if (moodInt * genreInt == 14) {
+            thePlaylist.text = "You should listen to Otis Redding's album Pain In My Heart."
+        }
+        else if (moodInt * genreInt == 10) {
+            thePlaylist.text = "You should listen to The Smiths."
+        }
+        
+        else if (moodInt * genreInt == 6) {
+            thePlaylist.text = "You should listen to Melanie Martinez."
+        }
+        
+        else if (moodInt * genreInt == 18) {
+            thePlaylist.text = "You should listen to King Krule."
+        }
+        
+        else if (moodInt * genreInt == 14) {
+            thePlaylist.text = "You should listen to Lady Antebellum."
+        }
+        
+        // calm x indie
+        if (moodInt * genreInt == 36) {
+            thePlaylist.text = "You should listen to SALES's album Forever & Ever."
+        }
+        else if (moodInt * genreInt == 20) {
+            thePlaylist.text = "You should listen to The Goo Goo Dolls."
+        }
+        
+        else if (moodInt * genreInt == 12) {
+            thePlaylist.text = "You should listen to Marina and The Diamonds."
+        }
+        else if (moodInt * genreInt == 28) {
+            thePlaylist.text = "You should listen to Bon Iver."
+        }
+        else if (moodInt * genreInt == 28) {
+            thePlaylist.text = "You should listen to Patsy Cline."
+        }
+        
+        // romantic x country
+        if (moodInt * genreInt == 70) {
+            thePlaylist.text = "You should listen to George Straight's album Straight From The Heart."
+        }
+        
+        else if (moodInt * genreInt == 50) {
+            thePlaylist.text = "You should listen to Kings of Leon."
+        }
+        
+        else if (moodInt * genreInt == 30) {
+            thePlaylist.text = "You should listen to Rihanna."
+        }
+        
+        else if (moodInt * genreInt == 90) {
+            thePlaylist.text = "You should listen to Conar Gray."
+        }
+        
+        else if (moodInt * genreInt == 70) {
+            thePlaylist.text = "You should listen to Al Green."
+        }
     }
     
         

@@ -7,9 +7,10 @@
 //
 
 import UIKit
-var selection:String!
 
 class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    var selection = String()
     
     @IBOutlet weak var genreLabel: UILabel!
     
@@ -47,7 +48,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         if (global.genreVar == "Rock") {genreInt = 5}
         
-        if (global.genreVar == "Punk") {genreInt = 7}
+        if (global.genreVar == "Blues") {genreInt = 7}
         
         if (global.genreVar == "Indie") {genreInt = 9}
     }
